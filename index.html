@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punching Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="tossSection">
+        <h1 class="tossHeading">Toss a Coin</h1>
+        <div id="tossReport"></div>
+        <select id="tossDecision">
+            <option value="head">Head</option>
+            <option value="tail">Tail</option>
+        </select> <br>
+        <button id="tossCoin" onclick="tossCoin()">Toss Coin</button>
+    </div>
+    <div class="health">
+        <span id="playerHealth"></span>
+        <span id="opponentHealth"></span>
+    </div>
+    <div id="fightSection">
+        <div class="fightResult" id="fightResult0"></div>
+        <div class="playerAction" id="playerAction1"></div>
+        <div class="fightResult" id="fightResult1"></div>
+        <div class="playerAction" id="playerAction2"></div>
+        <div class="fightResult" id="fightResult2"></div>
+        <div class="playerAction" id="playerAction3"></div>
+        <div class="fightResult" id="fightResult3"></div>
+        <div class="playerAction" id="playerAction4"></div>
+        <div class="fightResult" id="fightResult4"></div>
+        <div id="fightWinner"></div>
+    </div>
+    <div class="buttons">
+        <button id="resetButton" onclick="resetGame()">Reset</button>
+        <button id="attackButton" onclick="playerChoice('attack')" disabled>Attack</button>
+        <button id="defendButton" onclick="playerChoice('defend')" disabled>Defend</button>
+    </div>
+</body>
+</html>

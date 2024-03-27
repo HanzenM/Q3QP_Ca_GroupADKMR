@@ -19,11 +19,22 @@
         <button id="tossCoin" onclick="tossCoin()">Toss Coin</button>
     </div>
     <div class="health">
-        <span id="playerHealth"></span>
-        <span id="opponentHealth"></span>
+        <div class="healthContainer">
+            <span id="playerHealth"></span>
+            <span id="opponentHealth"></span>
+        </div>
+        <div class="healthContainer">
+            <div id="playerHealthBar" class="playerHealthBar"></div>
+            <div id="opponentHealthBar" class="opponentHealthBar"></div>
+        </div>
+    </div>
+    <div class="boxingMatch">
+        <img id="boxingBackground" src="images/boxingbackground.jpg" alt="">
+        <img id="playerImage" src="images/player.webp" alt="">
+        <img id="opponentImage" src="images/opponent.jpg" alt="">
     </div>
     <div id="fightSection">
-        <div class="fightResult" id="fightResult0"></div>
+        <div id="note"></div>
         <div class="playerAction" id="playerAction1"></div>
         <div class="fightResult" id="fightResult1"></div>
         <div class="playerAction" id="playerAction2"></div>
